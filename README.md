@@ -52,16 +52,19 @@ Implemented and tested:
 git clone https://github.com/iamsuraj24-hub/<your-repo-name>.git
 cd <your-repo-name>
 
-# 2. Install dependencies
-pip install -r requirements.txt
+# 2. Install uv (if not already installed)
+# https://docs.astral.sh/uv/getting-started/installation/
 
-# 3. Configure environment variables
+# 3. Install dependencies (creates a virtual environment automatically)
+uv sync
+
+# 4. Configure environment variables
 cp .env.example .env
 # Add your Azure endpoint and API key to .env
 ```
 
 ## Credits
-Learned by following the Microsoft Foundry masterclass by **<instructor / channel name>** ([link](<course-url>)). All implementation and experiments in this repo were done by me while following and extending the course.
+Learned by following the Microsoft Foundry masterclass by Ansh Lamba ([YouTube link](https://www.youtube.com/watch?v=nuQtFrewR0o)). All implementation and experiments in this repo were done by me while following and extending the course.
 
 ## Author
 **Suraj Gupta**: AI/ML Engineer
